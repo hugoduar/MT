@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-jul-2015 1:33:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.DEdNivAu" table="D_EdNivAu" catalog="mytime" optimistic-lock="version">
+        <id name="idDEdAuNiv" type="java.lang.Integer">
+            <column name="idD_EdAuNiv" />
+            <generator class="identity" />
+        </id>
+        <property name="idCEdificio" type="int">
+            <column name="idC_Edificio" not-null="true" />
+        </property>
+        <property name="idCTipNivel" type="int">
+            <column name="idC_TipNivel" not-null="true" />
+        </property>
+        <property name="idAula" type="int">
+            <column name="idAula" not-null="true" />
+        </property>
+        <property name="idCLocal" type="int">
+            <column name="idC_local" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

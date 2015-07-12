@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-jul-2015 1:33:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Empleado" table="Empleado" catalog="mytime" optimistic-lock="version">
+        <composite-id name="id" class="model.EmpleadoId">
+            <key-property name="idEmpleado" type="int">
+                <column name="idEmpleado" />
+            </key-property>
+            <key-property name="idBase" type="int">
+                <column name="idBase" />
+            </key-property>
+            <key-property name="idInterinato" type="int">
+                <column name="idInterinato" />
+            </key-property>
+        </composite-id>
+        <property name="paterno" type="binary">
+            <column name="Paterno" not-null="true" />
+        </property>
+        <property name="materno" type="binary">
+            <column name="Materno" not-null="true" />
+        </property>
+        <property name="nombre" type="binary">
+            <column name="Nombre" not-null="true" />
+        </property>
+        <property name="curp" type="binary">
+            <column name="Curp" not-null="true" />
+        </property>
+        <property name="correo" type="binary">
+            <column name="Correo" not-null="true" />
+        </property>
+        <property name="sexo" type="boolean">
+            <column name="Sexo" not-null="true" />
+        </property>
+        <property name="nacimiento" type="date">
+            <column name="Nacimiento" length="0" not-null="true" />
+        </property>
+        <property name="entrada" type="date">
+            <column name="Entrada" length="0" not-null="true" />
+        </property>
+        <property name="salida" type="date">
+            <column name="Salida" length="0" />
+        </property>
+        <property name="estado" type="boolean">
+            <column name="Estado" not-null="true">
+                <comment>[0]Activo e [1]inactivo</comment>
+            </column>
+        </property>
+    </class>
+</hibernate-mapping>

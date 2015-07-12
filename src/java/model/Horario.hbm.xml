@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-jul-2015 1:33:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Horario" table="Horario" catalog="mytime" optimistic-lock="version">
+        <id name="idHorario" type="java.lang.Integer">
+            <column name="idHorario" />
+            <generator class="identity" />
+        </id>
+        <property name="idDGrUa" type="int">
+            <column name="idD_GrUA" not-null="true" />
+        </property>
+        <property name="idDia" type="int">
+            <column name="idDia" not-null="true" />
+        </property>
+        <property name="inicio" type="time">
+            <column name="Inicio" length="0" not-null="true" />
+        </property>
+        <property name="fin" type="time">
+            <column name="Fin" length="0" not-null="true" />
+        </property>
+        <property name="idSemestre" type="int">
+            <column name="idSemestre" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

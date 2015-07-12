@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-reverse-engineering PUBLIC "-//Hibernate/Hibernate Reverse Engineering DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-reverse-engineering-3.0.dtd">
+<hibernate-reverse-engineering>
+  <schema-selection match-catalog="MyTime"/>
+  <table-filter match-name="Interinato"/>
+  <table-filter match-name="Alumno"/>
+  <table-filter match-name="C_Carrera"/>
+  <table-filter match-name="Base"/>
+  <table-filter match-name="D_LaboArea"/>
+  <table-filter match-name="Laboratorio"/>
+  <table-filter match-name="PlanEstudios"/>
+  <table-filter match-name="D_GrUA"/>
+  <table-filter match-name="D_HorEdNivAu"/>
+  <table-filter match-name="Grupo"/>
+  <table-filter match-name="C_TipAu"/>
+  <table-filter match-name="D_EdNivAu"/>
+  <table-filter match-name="Area"/>
+  <table-filter match-name="D_GrUADo"/>
+  <table-filter match-name="D_EmAr"/>
+  <table-filter match-name="D_ArUA"/>
+  <table-filter match-name="Foto"/>
+  <table-filter match-name="Semestre"/>
+  <table-filter match-name="C_TipUs"/>
+  <table-filter match-name="C_Local"/>
+  <table-filter match-name="Disponible"/>
+  <table-filter match-name="Dia"/>
+  <table-filter match-name="Horario"/>
+  <table-filter match-name="Empleado"/>
+  <table-filter match-name="Usuario"/>
+  <table-filter match-name="D_UsEm"/>
+  <table-filter match-name="UniAprend_has_PlanEstudios"/>
+  <table-filter match-name="D_GrUAAl"/>
+  <table-filter match-name="C_Edificio"/>
+  <table-filter match-name="C_TipNivel"/>
+  <table-filter match-name="D_UsAl"/>
+  <table-filter match-name="D_ProDis"/>
+  <table-filter match-name="Turno"/>
+  <table-filter match-name="C_Aula"/>
+  <table-filter match-name="UniAprend"/>
+</hibernate-reverse-engineering>

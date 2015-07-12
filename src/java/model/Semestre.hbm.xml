@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 11-jul-2015 1:33:51 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="model.Semestre" table="Semestre" catalog="mytime" optimistic-lock="version">
+        <id name="idSemestre" type="java.lang.Integer">
+            <column name="idSemestre" />
+            <generator class="identity" />
+        </id>
+        <property name="tipo" type="string">
+            <column name="Tipo" length="1" not-null="true" />
+        </property>
+        <property name="ano" type="int">
+            <column name="Ano" not-null="true" />
+        </property>
+        <property name="inicio" type="date">
+            <column name="Inicio" length="0" not-null="true" />
+        </property>
+        <property name="fin" type="date">
+            <column name="Fin" length="0" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

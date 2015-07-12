@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/MyTime?zeroDateTimeBehavior=convertToNull</property>
+    <property name="hibernate.connection.username">root</property>
+    <property name="hibernate.connection.password">n0m3l0</property>
+    <mapping resource="model/Semestre.hbm.xml"/>
+    <mapping resource="model/DProDis.hbm.xml"/>
+    <mapping resource="model/DEdNivAu.hbm.xml"/>
+    <mapping resource="model/Alumno.hbm.xml"/>
+    <mapping resource="model/DArUa.hbm.xml"/>
+    <mapping resource="model/CCarrera.hbm.xml"/>
+    <mapping resource="model/Empleado.hbm.xml"/>
+    <mapping resource="model/DHorEdNivAu.hbm.xml"/>
+    <mapping resource="model/CEdificio.hbm.xml"/>
+    <mapping resource="model/DEmAr.hbm.xml"/>
+    <mapping resource="model/Laboratorio.hbm.xml"/>
+    <mapping resource="model/CTipAu.hbm.xml"/>
+    <mapping resource="model/CTipUs.hbm.xml"/>
+    <mapping resource="model/Foto.hbm.xml"/>
+    <mapping resource="model/Area.hbm.xml"/>
+    <mapping resource="model/DGrUado.hbm.xml"/>
+    <mapping resource="model/PlanEstudios.hbm.xml"/>
+    <mapping resource="model/Horario.hbm.xml"/>
+    <mapping resource="model/Grupo.hbm.xml"/>
+    <mapping resource="model/Interinato.hbm.xml"/>
+    <mapping resource="model/CTipNivel.hbm.xml"/>
+    <mapping resource="model/Dia.hbm.xml"/>
+    <mapping resource="model/CAula.hbm.xml"/>
+    <mapping resource="model/UniAprend.hbm.xml"/>
+    <mapping resource="model/DGrUa.hbm.xml"/>
+    <mapping resource="model/CLocal.hbm.xml"/>
+    <mapping resource="model/DUsAl.hbm.xml"/>
+    <mapping resource="model/Base.hbm.xml"/>
+    <mapping resource="model/DLaboArea.hbm.xml"/>
+    <mapping resource="model/Usuario.hbm.xml"/>
+    <mapping resource="model/Turno.hbm.xml"/>
+    <mapping resource="model/DGrUaal.hbm.xml"/>
+    <mapping resource="model/Disponible.hbm.xml"/>
+    <mapping resource="model/DUsEm.hbm.xml"/>
+    <mapping resource="model/UniAprendHasPlanEstudios.hbm.xml"/>
+  </session-factory>
+</hibernate-configuration>
